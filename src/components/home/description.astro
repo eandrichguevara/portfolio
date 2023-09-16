@@ -1,0 +1,62 @@
+---
+---
+<style>
+
+  section{
+    height: 100vh;
+    margin-left: calc(max(2.5rem, 5vw) + 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1{
+    display: inline;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  span{
+    color: var(--gray);
+  }
+  
+  @media screen and (min-width: 540px) {
+    span{
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 690px) {
+    span{
+      font-size: 2rem;
+    }
+  }
+
+  .line{
+    display: block
+  }
+
+  .tab{
+    margin-left: 2rem
+  }
+
+  .var{
+    color: var(--orange);
+    font-style: italic;
+  }
+
+  .interface{
+    color: var(--bluegreen-light)
+  }
+
+  .string{
+    color: var(--green);
+    font-style: italic;
+  }
+</style>
+
+<section>
+  <span class="line">var <span class="var">eandr</span>: <h1><span class="interface">FrontendDeveloper</span></h1>{" {"}</span>
+  <span class="line tab">name: <span class="string">"Emilio Andrich"</span>,</span>
+  <span class="line">{"}"}</span>
+</section>
