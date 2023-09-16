@@ -1,0 +1,60 @@
+---
+
+---
+<style>
+  nav{
+    height: 100%;
+    width: 2.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--black);
+    box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.3);
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  li{
+    display: flex;
+    justify-content: center;
+  }
+
+  .guide-bar{
+    margin-left: 20px;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: var(--gray);
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  .circle{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    border: solid 2px var(--pomelo-dark);
+    background-color: var(--black);
+  }
+  
+  .circle.active{
+    border-color: var(--pomelo);
+    box-shadow: 0px 0px 3px 0px var(--pomelo);
+  }
+</style>
+
+<nav>
+  <ul>
+    <li><a href="#description"><div class="circle active"></div></a></li>
+    <div class="guide-bar"></div>
+  </ul>
+</nav>
