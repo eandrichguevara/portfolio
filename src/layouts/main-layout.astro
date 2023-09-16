@@ -1,0 +1,17 @@
+---
+import NavBar from '../components/main-layout/navbar.astro'
+
+const { title } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar/>
+    <slot/>
+  </body>
+</html>
